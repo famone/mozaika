@@ -1,6 +1,8 @@
 <template>
   <div id="app">
 
+  	<appForm />
+
   	<appPreloader :activate="preload" />
 
 	<appHeader></appHeader>
@@ -18,6 +20,7 @@ import './assets/css/style.css';
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Preloader from './components/Preloader.vue'
+import Form from './components/Form.vue'
 
 
 export default {
@@ -32,7 +35,8 @@ export default {
 	components: {
 		'appHeader': Header,
 		'appFooter': Footer,
-		'appPreloader': Preloader
+		'appPreloader': Preloader,
+		'appForm': Form
 	},
 	created(){
 		// this.$store.dispatch('geners/loadGeners')

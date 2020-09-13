@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="breadcr">
 				<router-link tag="p" to="/" class="black-txt2">Главная</router-link>
-				<p class="black-txt2">Аренда генераторов</p>
+				<router-link tag="p" to="/generators" class="black-txt2">Аренда генераторов</router-link>
 				<p class="black-txt2">Генераторы мощностью: {{title.powerFrom}}-{{title.powerTo}} кВт</p>
 			</div>
 		</div>

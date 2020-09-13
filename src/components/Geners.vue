@@ -4,7 +4,6 @@
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="wow fadeInUp">Аренда генераторов</h2>
-					<p class="grey-txt wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni omnis fuga natus <br>laboriosam cumque repellendus sapiente, unde optio. Quo voluptates, tempora nihil facilis! </p>
 				</div>
 			</div>
 

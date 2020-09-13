@@ -5,6 +5,29 @@ const geners = {
 	namespaced: true,
 	state: {
 		preload: false,
+		formPop: false,
+		socials: [
+				{
+					link: '',
+					img: 'https://www.flaticon.com/svg/static/icons/svg/733/733585.svg'
+				},
+				{
+					link: '',
+					img: 'https://www.flaticon.com/svg/static/icons/svg/2111/2111646.svg'
+				},
+				{
+					link: '',
+					img: 'https://www.flaticon.com/svg/static/icons/svg/145/145813.svg'
+				},
+				{
+					link: '',
+					img: 'https://www.flaticon.com/svg/static/icons/svg/185/185982.svg'
+				},
+				{
+					link: '',
+					img: 'https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg'
+				}
+			],
 		generators: [
 				{
 					id: 1,
@@ -143,11 +166,17 @@ const geners = {
   	mutations: {
   		PRELOADER(state){
   			state.preload = !state.preload
+  		},
+  		SET_POP(state){
+  			state.formPop = !state.formPop
   		}
   	},
 	actions: {
 		makeStuff({commit}){
 			commit('PRELOADER')
+		},
+		openPop({commit}){
+			commit('SET_POP')
 		}
 	},
 	getters: {

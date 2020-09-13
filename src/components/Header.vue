@@ -12,7 +12,7 @@
 					<li><a href="tel:+79052627002" >+7 905 262-70-02</a></li>
 					<li><a href="mailto:mosaika.des@mail.ru">mosaika.des@mail.ru</a></li>
 					<br>
-					<li><button class="order">Отправить заявку</button></li>
+					<li><button class="order" @click="openPop()">Отправить заявку</button></li>
 			</ul>
 		</div>
 		<nav>
@@ -24,10 +24,14 @@
 							<img src="../assets/img/logo.svg" alt="">
 						</div>
 					</router-link>
-					<button class="order hidden-xs hidden-sm">Написать в Whats App</button>
+					<div class="socials hidden-sm hidden-xs">
+						<a :href="social.link" v-for="social in socials">
+							<img :src="social.img" alt="">
+						</a>
+					</div>
 					<a href="tel:+79052627002" class="hidden-xs hidden-sm">+7 905 262-70-02</a>
 					<a href="mailto:mosaika.des@mail.ru" class="hidden-xs hidden-sm">mosaika.des@mail.ru</a>
-					<button class="order hidden-sm hidden-xs">Отправить заявку</button>
+					<button class="order hidden-sm hidden-xs" @click="openPop()">Отправить заявку</button>
 					<div class="menu-btn order hidden-lg hidden-md" @click="menuActive = !menuActive">МЕНЮ</div>
 				</div>
 			</div>
@@ -51,7 +55,12 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
+
 export default{
+	computed: {
+		...mapState('geners', ['socials']),
+	},
 	data(){
 		return{
 			menuActive: false,
@@ -77,6 +86,12 @@ export default{
 					link: '/contacts'
 				},
 			]
+				
+		}
+	},
+	methods: {
+		openPop(){
+			this.$store.dispatch('geners/openPop')
 		}
 	}
 }

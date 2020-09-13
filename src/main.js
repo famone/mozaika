@@ -33,14 +33,14 @@ new Vue({
 router.beforeEach((to, from, next) => {
   // this.$store.dispatch('geners/checkRouter')
    store.dispatch('geners/makeStuff')
-  console.log(store.state.geners.preload)
+  // console.log(store.state.geners.preload)
   // console.log(App.data)
 
   setTimeout(function(){
                       next()
-  }, 1000);
+  }, 600);
   setTimeout(function(){
               store.dispatch('geners/makeStuff')        
-  }, 1000);
+  }, 800);
 })
 

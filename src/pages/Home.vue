@@ -5,7 +5,7 @@
 				<h1 class="wow fadeInUp">АРЕНДА ДИЗЕЛЬНЫХ ГЕНЕРАТОРОВ
 				<br>БОЛЬШОЙ И МАЛОЙ МОЩНОСТИ</h1>
 				<p class="subtitle wow fadeInUp">Наша цель - обеспечить надежным и качественным 
-				<br>электроснабжением любое производство!</p>
+				<br>электроснабжением!</p>
 				<button class="order wow fadeInUp">КАТАЛОГ</button>
 			</div>
 		</section>

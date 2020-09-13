@@ -2,6 +2,7 @@ import VueRouter from 'vue-router'
 import Home from './pages/Home.vue'
 import Singlegen from './pages/Singlegen.vue'
 import NotFound from './pages/NotFound.vue'
+import Rent from './pages/Rent.vue'
 
 
 export default new VueRouter({
@@ -13,6 +14,10 @@ export default new VueRouter({
 		{
 			path: '/generators/:id',
 			component: Singlegen
+		},
+		{
+			path: '/generators',
+			component: Rent
 		},
 		{
 			path: '*',

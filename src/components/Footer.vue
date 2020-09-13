@@ -2,8 +2,12 @@
 	<footer>
 		<div class="container">
 			<div class="col-lg-3">
-				<h5>ООО "МОЗАЙКА ДЭС”</h5>
-				<p class="small-grey">Аренда дизельных
+				<router-link tag="a" to="/">
+						<div class="logo">
+							<img src="../assets/img/logo2.svg" alt="">
+						</div>
+					</router-link>
+				<p class="small-grey">ООО "МОЗАЙКА ДЭС” <br>Аренда дизельных
 				<br>электростанций</p>
 			</div>
 			<div class="col-lg-3">
@@ -20,9 +24,11 @@
 			</div>
 			<div class="col-lg-3">
 				<h5>СВЯЗАТЬСЯ</h5>
-				<a href="https://wa.me/79052627002">
-					<button class="order whats">Написать в Whats App</button>
-				</a>
+				<div class="socials">
+						<a :href="social.link" v-for="social in socials">
+							<img :src="social.img" alt="">
+						</a>
+					</div>
 				<div class="webink">
 						<a href="https://webink.site/">Разработка сайта - webink.site</a>
 					</div>
@@ -32,6 +38,13 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
+
+export default{
+	computed: {
+		...mapState('geners', ['socials']),
+	}
+}
 	
 </script>
 
@@ -46,7 +59,7 @@ h5{
 	line-height: 24px;
 	margin-bottom: 15px;
 	color: #FFFFFF;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 .small-grey{
 	font-size: 16px;

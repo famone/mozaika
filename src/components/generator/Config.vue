@@ -16,7 +16,7 @@
 					<div class="col-lg-4 mb-30">
 						<h3>Заказать аренду:</h3>
 						<br>
-						<button class="order" style="width: 100%;">Отправить заявку</button>
+						<button class="order" @click="openPop()" style="width: 100%;">Отправить заявку</button>
 					</div>
 				</div>
 </template>
@@ -52,6 +52,11 @@
 				}
 				
 				return finalPrice.toLocaleString()
+			}
+		},
+		methods: {
+			openPop(){
+				this.$store.dispatch('geners/openPop')
 			}
 		}
 	}
