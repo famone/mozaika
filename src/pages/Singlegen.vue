@@ -5,6 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
+						<button class="go-back" @click="$router.go(-1)">Назад</button>
 						<h3>Генераторы мощностью: 
 							<img src="../assets/img/light.svg" alt="">
 							{{getGenerators(itemSlug).powerFrom}}-{{getGenerators(itemSlug).powerTo}} кВт

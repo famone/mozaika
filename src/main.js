@@ -6,6 +6,7 @@ import store from './store'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueTheMask from 'vue-the-mask'
 import Vuelidate from 'vuelidate'
+import VueScrollTo from 'vue-scrollto'
 
 
 
@@ -18,6 +19,7 @@ Vue.use(VueRouter)
 Vue.use(VueAwesomeSwiper)
 Vue.use(Vuelidate)
 Vue.use(require('vue-cookies'))
+Vue.use(VueScrollTo)
 
 
 

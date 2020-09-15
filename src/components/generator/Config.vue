@@ -5,7 +5,7 @@
 						<br>
 						<div class="config">
 							<label for="">Выберите срок ареды: <span>{{rentDays}} дн.</span></label>
-							<input type="range" max="60" min="1" step="1" v-model="rentDays" :style="{backgroundSize : getRangeWidth + '%'}">
+							<input type="range" max="60" min="1" step="1" v-model="rentDays" :style="{backgroundSize : getRangeWidth + '%' + ' 100%'}">
 						</div>
 					</div>
 					<div class="col-lg-4 mb-30">

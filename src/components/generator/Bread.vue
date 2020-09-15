@@ -2,8 +2,8 @@
 	<section id="bread">
 		<div class="container">
 			<div class="breadcr">
-				<router-link tag="p" to="/" class="black-txt2">Главная</router-link>
-				<router-link tag="p" to="/generators" class="black-txt2">Аренда генераторов</router-link>
+				<router-link tag="p" to="/" class="black-txt2 bread-link">Главная</router-link>
+				<router-link tag="p" to="/generators" class="black-txt2 bread-link">Аренда генераторов</router-link>
 				<p class="black-txt2">Генераторы мощностью: {{title.powerFrom}}-{{title.powerTo}} кВт</p>
 			</div>
 		</div>
@@ -20,3 +20,12 @@
 		}
 	}
 </script>
+
+<style scoped>
+.bread-link{
+	cursor: pointer;
+}
+.bread-link:hover{
+	text-decoration: underline;
+}
+</style>

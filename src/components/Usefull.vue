@@ -4,13 +4,17 @@
 			<div class="col-lg-12 text-center">
 			<h2 class="wow fadeInUp">Полезная информация</h2>
 		</div>
+
 		<div class="col-lg-12">
 						<swiper ref="mySwiper" :options="swiperOptions" class="slider">
-						    <swiper-slide v-for="inf in info">
+						    <swiper-slide v-for="inf in information">
 						    	<div class="inf-box">
 						    		<h3>{{inf.title}}</h3>
 						    	<p class="grey-txt">{{inf.descr.substring(0,99)+"..."}}</p>
-						    	<button class="order">Читать далее</button>
+
+						    	<router-link tag="a" :to="'/info/' + inf.id">
+						    		<button class="order">Читать далее</button>
+						    	</router-link>
 						    	</div>
 						    </swiper-slide>
 	  					</swiper>
@@ -24,19 +28,11 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
+
 export default{
 	data(){
 		return{
-			info: [
-				{
-					title: 'Принцип работы с дизельными генераторами',
-					descr: 'Зная компоненты электростанции, легко представить, как они взаимодействуют друг с другом, обеспечивая на обслуживаемом объекте снабжение электричеством в необходимом объеме.'
-				},
-				{
-					title: 'Устройство дизельных электростанций',
-					descr: 'От четкого понимания устройства системы и механизма взаимодействия отдельных ее элементов напрямую зависит правильность эксплуатации конструкции, способность своевременного выявления факта сбоев и отклонений в работе техники.'
-				}
-			],
 			swiperOptions: {
 			        slidesPerView: 2,
 			      spaceBetween: 30,
@@ -67,7 +63,8 @@ export default{
 	computed: {
 		swiper(){
 	       	return this.$refs.mySwiper.$swiper
-	    }
+	    },
+	    ...mapState('geners', ['information']),
 	}
 }
 </script>
@@ -79,7 +76,7 @@ export default{
 	width: 108%;
 	justify-content: space-between;
 	transform: translateY(-180px) translateX(-4%);
-	z-index: 100;
+	z-index: 10;
 	position: relative;
 }
 .prevBtn{

@@ -54,7 +54,7 @@ hr{
 	opacity: .5;
 }
 .gen-img{
-	height: 165px;
+	width: 100%;
 	margin-bottom: 25px;
 }
 .power{

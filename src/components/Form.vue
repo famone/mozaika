@@ -5,9 +5,9 @@
 			<h3 class="text-center">Отправить заявку на аренду генератора</h3>
 			<form action="">
 				<label for="">Ваше имя</label>
-				<input type="text">
+				<input type="text" placeholder="Введите имя">
 				<label for="">Ваш телефон</label>
-				<input type="text">
+				<input type="text" placeholder="Введите телефон" v-mask="'+7 (###) ###-##-##'">
 				<div class="text-center">
 					<button class="order">Отправить</button>
 				</div>

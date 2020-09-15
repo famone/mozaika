@@ -6,7 +6,7 @@
 				<br>БОЛЬШОЙ И МАЛОЙ МОЩНОСТИ</h1>
 				<p class="subtitle wow fadeInUp">Наша цель - обеспечить надежным и качественным 
 				<br>электроснабжением!</p>
-				<button class="order wow fadeInUp">КАТАЛОГ</button>
+				<button class="order wow fadeInUp" v-scroll-to="'#goods'">КАТАЛОГ</button>
 			</div>
 		</section>
 		<appGeners></appGeners>

@@ -53,7 +53,7 @@ const geners = {
 					id: 2,
 					powerFrom: 30,
 					powerTo: 48,
-					img: require('../assets/img/geners/30-48.jpg'),
+					img: require('../assets/img/geners/30-48.png'),
 					table: [
 						{
 							power: 30,
@@ -73,7 +73,7 @@ const geners = {
 					id: 3,
 					powerFrom: 60,
 					powerTo: 200,
-					img: require('../assets/img/geners/60-200.jpg'),
+					img: require('../assets/img/geners/60-200.png'),
 					table: [
 						{
 							power: 60,
@@ -105,7 +105,7 @@ const geners = {
 					id: 4,
 					powerFrom: 220,
 					powerTo: 280,
-					img: require('../assets/img/geners/220-280.jpg'),
+					img: require('../assets/img/geners/220-280.png'),
 					table: [
 						{
 							power: 220,
@@ -125,7 +125,7 @@ const geners = {
 					id: 5,
 					powerFrom: 320,
 					powerTo: 400,
-					img: require('../assets/img/geners/320-400.jpg'),
+					img: require('../assets/img/geners/320-400.png'),
 					table: [
 						{
 							power: 320,
@@ -145,7 +145,7 @@ const geners = {
 					id: 6,
 					powerFrom: 500,
 					powerTo: 800,
-					img: require('../assets/img/geners/500-800.jpg'),
+					img: require('../assets/img/geners/500-800.png'),
 					table: [
 						{
 							power: 500,
@@ -161,6 +161,18 @@ const geners = {
 						}
 					]
 				},
+			],
+			information: [
+				{
+					id: 1,
+					title: 'Принцип работы с дизельными генераторами',
+					descr: 'Зная компоненты электростанции, легко представить, как они взаимодействуют друг с другом, обеспечивая на обслуживаемом объекте снабжение электричеством в необходимом объеме.'
+				},
+				{
+					id: 2,
+					title: 'Устройство дизельных электростанций',
+					descr: 'От четкого понимания устройства системы и механизма взаимодействия отдельных ее элементов напрямую зависит правильность эксплуатации конструкции, способность своевременного выявления факта сбоев и отклонений в работе техники.'
+				}
 			]
   	},
   	mutations: {
@@ -182,6 +194,9 @@ const geners = {
 	getters: {
   		getGenerators: (state) => (id) => {
   			return state.generators.find(item => item.id == id)
+  		},
+  		getInfo: (state) => (id) => {
+  			return state.information.find(item => item.id == id)
   		},
   		getPreload(state){
   			return 10

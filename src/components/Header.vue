@@ -3,11 +3,9 @@
 		<div class="mobile-menu" :class="{mobileAc : menuActive }">
 			<div class="cross" @click="menuActive = !menuActive">✕</div>
 			<ul @click="menuActive = !menuActive">
-					<li><a href="">АРЕНДА ГЕНЕРАТОРОВ</a></li>
-					<li><a href="">О КОМПАНИИ</a></li>
-					<li><a href="">АРЕНДА МАНИПУЛЯТОРОВ</a></li>
-					<li><a href="">УСЛУГИ</a></li>
-					<li><a href="">КОНТАКТЫ</a></li>
+					<li v-for="nav in navigation">
+						<router-link tag="a" :to="nav.link">{{nav.title}}</router-link>
+					</li>
 					<br>
 					<li><a href="tel:+79052627002" >+7 905 262-70-02</a></li>
 					<li><a href="mailto:mosaika.des@mail.ru">mosaika.des@mail.ru</a></li>
@@ -39,14 +37,9 @@
 		<div class="shapka hidden-xs hidden-sm">
 			<div class="container">
 				<ul>
-					<li v-for="nav in navigation">
-						<router-link tag="a" :to="nav.link" active-class="aLink">{{nav.title}}</router-link>
-					</li>
-					<!-- <li><a href="">АРЕНДА ГЕНЕРАТОРОВ</a></li>
-					<li><a href="">О КОМПАНИИ</a></li>
-					<li><a href="">АРЕНДА МАНИПУЛЯТОРОВ</a></li>
-					<li><a href="">УСЛУГИ</a></li>
-					<li><a href="">КОНТАКТЫ</a></li> -->
+					<router-link tag="li" :to="nav.link" v-for="nav in navigation" active-class="aLink">
+						{{nav.title}}
+					</router-link>
 				</ul>
 			</div>
 		</div>
@@ -134,6 +127,7 @@ export default{
 	padding:0;
 	margin-bottom: 10px;
 	text-align: left;
+	width: 100%;
 }
 .mobile-menu a{
 	padding:0;
@@ -156,19 +150,27 @@ ul{
 	justify-content: space-between;
 	align-items: center;
 }
-ul a{
+/*ul a{
 	font-size: 16px;
 	color: #000;
 	font-weight: 500;
-	padding:27px 22px;
+	padding:27px 0px;
 	transition: all .3s ease;
+	width: 100%;
+}*/
+li{
+	padding:25px 0px;
+	transition: all .3s ease;
+	width: 20%;
+	text-align: center;
+	font-size: 15px;
+	color: #000;
+	font-weight: 500;
+	cursor: pointer;
 }
-ul a:hover{
+ul li:hover{
 	background-color: #00337E;
 	color: #fff;
-}
-li{
-	padding:25px 22px;
 }
 .aLink{
 	background-color: #00337E;

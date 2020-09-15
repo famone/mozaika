@@ -69,6 +69,10 @@ footer .logo img{
 	color: #fff;
 	border: #fff 1px solid;
 }
+#intro .order:hover{
+	color: #fff;
+	border: #fff 1px solid;
+}
 h2{
 	font-weight: 500;
 	font-size: 45px;
@@ -135,7 +139,7 @@ h3{
 	width: 100%;
 }
 #generator{
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 
@@ -298,6 +302,76 @@ h4{
 	align-items: center;
 	height: calc(100vh - 390px);
 }
+.go-back{
+	background-color: #dfdfdf;
+	border: none;
+	border-radius: 3px;
+	padding: 6px 10px;
+	margin-bottom: 15px;
+	transition:all .3s ease;
+}
+.go-back:hover{
+	color: #fff;
+	background-color: #00337E;
+}
+#intro{
+	padding: 60px 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/main.jpg);
+}
+#outro{
+	padding: 90px 0;
+}
+#contacts{
+	padding: 100px 0;
+	position: relative;
+}
+.cont-box{
+	padding: 40px 30px 30px 30px;
+	background-color: #ECECEC;
+	position: relative;
+	width: 100%;
+	margin-bottom: 45px;
+	box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+.icon-circle{
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	left: calc(50% - 30px);
+	top: -30px;
+	border-radius: 50px;
+	background-color: #00337E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .3s ease;
+}
+.cont-box:hover .icon-circle{
+	transform: scale(1.1);
+}
+.icon-circle img{
+	height: 25px;
+}
+#serv{
+	padding: 50px 0;
+}
+
+#serv td {
+    padding: 17px 10px;
+}
+#serv tr:nth-child(even){
+	background-color: #ececec;
+}
+#serv tr{
+	border: none;
+}
+
+
+
 
 
 
@@ -326,6 +400,9 @@ h4{
 	.mb-30{
 		margin-bottom: 20px;
 	}
+	.gen-box{
+		min-width: 250px;
+	}
 }
 @media (max-width: 512px) {
 	table .black-txt{
@@ -333,6 +410,9 @@ h4{
 	}
 	table .black-txt2{
 		font-size: 12px;
+	}
+	.pop-box{
+		width: 90%;
 	}
 }
 @media (max-width: 390px) {
