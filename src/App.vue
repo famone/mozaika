@@ -38,8 +38,9 @@ export default {
 		'appPreloader': Preloader,
 		'appForm': Form
 	},
-	created(){
-		// this.$store.dispatch('geners/loadGeners')
+	mounted(){
+		this.$store.dispatch('geners/loadGeners')
+		this.$store.dispatch('geners/loadUsefull')
 	}
 }
 </script>

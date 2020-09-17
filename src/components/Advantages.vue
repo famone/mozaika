@@ -25,15 +25,15 @@ export default{
 		return{
 			icons: [
 				{
-					title: 'Техническая поддержка 24/7',
+					title: 'Круглосуточная техническая поддержка',
 					img: require('../assets/img/ic1.svg')
 				},
 				{
-					title: 'Консультация по обслуживанию',
+					title: 'Бесплатные консультации',
 					img: require('../assets/img/ic2.svg')
 				},
 				{
-					title: 'Быстрая подача оборудования',
+					title: 'Грамотная логистика',
 					img: require('../assets/img/ic3.svg')
 				},
 				{
@@ -45,7 +45,7 @@ export default{
 					img: require('../assets/img/ic5.svg')
 				},
 				{
-					title: 'Выгодные условия сотрудничества с фирмой',
+					title: 'Выгодные условия сотрудничества',
 					img: require('../assets/img/ic6.svg')
 				},
 			]
@@ -72,6 +72,7 @@ export default{
 	justify-content: flex-start;
 	align-items: center;
 	margin-bottom: 50px;
+	min-height: 58px;
 }
 .icon img{
 	height: 50px;

@@ -1,7 +1,7 @@
 <template>
 	<footer>
 		<div class="container">
-			<div class="col-lg-3">
+			<div class="col-lg-4 text-center">
 				<router-link tag="a" to="/">
 						<div class="logo">
 							<img src="../assets/img/logo2.svg" alt="">
@@ -10,25 +10,24 @@
 				<p class="small-grey">ООО "МОЗАЙКА ДЭС” <br>Аренда дизельных
 				<br>электростанций</p>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-4 text-center">
 				<h5>КОНТАКТЫ</h5>
 				<p class="small-grey"><a href="tel:+79052627002">+7 905 262-70-02</a></p>
 				<p class="small-grey"><a href="tel:+79650331799">+7 965 033-17-99</a></p>
 				<p class="small-grey"><a href="mailto:mosaika.des@mail.ru">mosaika.des@mail.ru</a></p>
-			</div>
-			<div class="col-lg-3">
-				<h5>АДРЕС</h5>
-				<p class="small-grey">Санкт-Петербург, <br>
-				ул. Летчика Пилютова,  <br>
-				д 11, корпус 1 литер а, офис 12-н  </p>
-			</div>
-			<div class="col-lg-3">
-				<h5>СВЯЗАТЬСЯ</h5>
 				<div class="socials">
 						<a :href="social.link" v-for="social in socials">
 							<img :src="social.img" alt="">
 						</a>
 					</div>
+			</div>
+			<div class="col-lg-4 text-center">
+				<h5>АДРЕС</h5>
+				<p class="small-grey">Санкт-Петербург, <br>
+				ул. Летчика Пилютова,  <br>
+				д 11, корпус 1 литер а, офис 12-н  </p>
+			</div>
+			<div class="col-lg-12 text-center">
 				<div class="webink">
 						<a href="https://webink.site/">Разработка сайта - webink.site</a>
 					</div>
@@ -86,9 +85,9 @@ h5{
 .webink{
 	font-weight: 400;
 	color: #fff;
-	font-size: 15px;
+	font-size: 13px;
 	transition: all .3s ease;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 .webink a{
 	color: #fff;

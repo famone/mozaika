@@ -7,11 +7,14 @@
 				</div>
 			</div>
 
+			
+<Preloadgens v-if="preloadGens" />
+
 			<div class="row float-div">
 				<div class="col-lg-4" v-for="gen in generators">
 					<div class="gen-box">
 						<h3>Генераторы мощностью:</h3>
-						<h3 class="power"><img src="../assets/img/light.svg" alt="">{{gen.powerFrom}}-{{gen.powerTo}} кВт</h3>
+						<h3 class="power"><img src="../assets/img/light.svg" alt="">{{gen.name}}</h3>
 						<hr>
 						<div class="text-center">
 							<img :src="gen.img" class="gen-img">
@@ -23,26 +26,29 @@
 								<td><p class="black-txt"><img src="../assets/img/rub.svg" alt="">Аренда в сутки</p></td>
 							</tr>
 							<tr v-for="item in gen.table.slice(0, 2)">
-								<td><p class="black-txt2">от {{item.power}} кВт</p></td>
+								<td><p class="black-txt2">{{item.power}} кВт</p></td>
 								<td><p class="black-txt2">от {{item.price}} ₽</p></td>
 							</tr>
 						</table>
-						<router-link tag="a" :to="'/generators/' + gen.id">
+						<router-link tag="a" :to="'/generators/' + gen.slug">
 							<button class="order">Подробнее</button>
 						</router-link>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</section>
 </template>
 
 <script>
 import {mapState} from 'vuex'
+import Preloadgens from './Preloadgens.vue'
 
 export default{
+	components: { Preloadgens },
 	computed: {
-		...mapState('geners', ['generators']),
+		...mapState('geners', ['generators', 'preloadGens']),
 	}
 }
 </script>

@@ -10,9 +10,9 @@
 						    <swiper-slide v-for="inf in information">
 						    	<div class="inf-box">
 						    		<h3>{{inf.title}}</h3>
-						    	<p class="grey-txt">{{inf.descr.substring(0,99)+"..."}}</p>
+						    	<p class="grey-txt" v-html="(inf.descr.substring(0,99)) + '...' "></p>
 
-						    	<router-link tag="a" :to="'/info/' + inf.id">
+						    	<router-link tag="a" :to="'/info/' + inf.slug">
 						    		<button class="order">Читать далее</button>
 						    	</router-link>
 						    	</div>

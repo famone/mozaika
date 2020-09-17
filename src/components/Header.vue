@@ -22,11 +22,6 @@
 							<img src="../assets/img/logo.svg" alt="">
 						</div>
 					</router-link>
-					<div class="socials hidden-sm hidden-xs">
-						<a :href="social.link" v-for="social in socials">
-							<img :src="social.img" alt="">
-						</a>
-					</div>
 					<a href="tel:+79052627002" class="hidden-xs hidden-sm">+7 905 262-70-02</a>
 					<a href="mailto:mosaika.des@mail.ru" class="hidden-xs hidden-sm">mosaika.des@mail.ru</a>
 					<button class="order hidden-sm hidden-xs" @click="openPop()">Отправить заявку</button>
@@ -48,12 +43,7 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
-
 export default{
-	computed: {
-		...mapState('geners', ['socials']),
-	},
 	data(){
 		return{
 			menuActive: false,

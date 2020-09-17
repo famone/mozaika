@@ -10,9 +10,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-					<p class="txt">
-						{{getInfo(itemSlug).descr}}
-					</p>
+					<p class="txt" v-html="getInfo(itemSlug).descr"></p>
 					<br>
 					<router-link tag="a" to="/generators">
 						<button class="order">КАТАЛОГ ГЕНЕРАТОРОВ</button>
@@ -41,9 +39,9 @@ export default{
 	},
 	created(){
 		this.itemSlug = this.$route.params.id
-		if(this.getInfo(this.itemSlug) === undefined){
-			this.$router.push('/404')
-		}
+		// if(this.getInfo(this.itemSlug) === undefined){
+		// 	this.$router.push('/404')
+		// }
 	}
 }
 </script>

@@ -6,7 +6,11 @@
 				<br>БОЛЬШОЙ И МАЛОЙ МОЩНОСТИ</h1>
 				<p class="subtitle wow fadeInUp">Наша цель - обеспечить надежным и качественным 
 				<br>электроснабжением!</p>
-				<button class="order wow fadeInUp" v-scroll-to="'#goods'">КАТАЛОГ</button>
+				<div class="socials">
+						<a :href="social.link" v-for="social in socials">
+							<img :src="social.img" alt="">
+						</a>
+					</div>
 			</div>
 		</section>
 		<appGeners></appGeners>
@@ -21,6 +25,7 @@ import Geners from '../components/Geners.vue'
 import Advantages from '../components/Advantages.vue'
 import More from '../components/More.vue'
 import Usefull from '../components/Usefull.vue'
+import {mapState} from 'vuex'
 
 export default{
 	components: {
@@ -28,6 +33,9 @@ export default{
 		'appAdvantages': Advantages,
 		'appMore': More,
 		'appUsefull': Usefull
+	},
+	computed: {
+		...mapState('geners', ['socials']),
 	}
 }
 </script>

@@ -8,7 +8,7 @@
 						<button class="go-back" @click="$router.go(-1)">Назад</button>
 						<h3>Генераторы мощностью: 
 							<img src="../assets/img/light.svg" alt="">
-							{{getGenerators(itemSlug).powerFrom}}-{{getGenerators(itemSlug).powerTo}} кВт
+							{{getGenerators(itemSlug).name}}
 						</h3>
 						<br>
 					</div>
@@ -18,14 +18,15 @@
 						<Genimg :img="getGenerators(itemSlug)"/>
 					</div>
 					<div class="col-lg-8 col-sm-8">
-						<Table :table="getGenerators(itemSlug)"/>
+						<Table :table="getGenerators(itemSlug)" />
 					</div>
 				</div>
-				<Config :checkItem="getGenerators(itemSlug)"/>
+				<Config :checkItem="getGenerators(itemSlug)"/> 
 			</div>
 		</section>
 		<More />
 		<Advantages />
+
 	</div>
 </template>
 
@@ -53,9 +54,10 @@ export default{
 	},
 	created(){
 		this.itemSlug = this.$route.params.id
-		if(this.getGenerators(this.itemSlug) === undefined){
-			this.$router.push('/404')
-		}
+		console.log(this.getGenerators(this.itemSlug))
+		// if(this.getGenerators(this.itemSlug) === undefined){
+		// 	this.$router.push('/404')
+		// }
 	}
 }
 </script>
