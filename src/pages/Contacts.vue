@@ -8,8 +8,8 @@
 						<div class="icon-circle">
 							<img src="../assets/img/tel.svg" alt="">
 						</div>
-						<a href=""><h3>+7 905 262-70-02</h3></a>
-						<a href=""><h3>+7 965 033-17-99</h3></a>
+						<a href="tel:+79052627002"><h3>+7 905 262-70-02</h3></a>
+						<a href="tel:+79650331799"><h3>+7 965 033-17-99</h3></a>
 					</div>
 				</div>
 			</div>
@@ -19,7 +19,7 @@
 						<div class="icon-circle">
 							<img src="../assets/img/mail.svg" alt="">
 						</div>
-						<a href=""><h3>mosaika.des@mail.ru</h3></a>
+						<a href="mailto:mosaika.des@mail.ru"><h3>mosaika.des@mail.ru</h3></a>
 					</div>
 				</div>
 			</div>

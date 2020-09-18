@@ -8,23 +8,23 @@ const geners = {
 		formPop: false,
 		socials: [
 				{
-					link: '',
+					link: 'https://vk.com/mozaika_energy',
 					img: 'https://www.flaticon.com/svg/static/icons/svg/145/145813.svg'
 				},
 				{
-					link: '',
+					link: 'https://www.instagram.com/mozaika_energy/',
 					img: 'https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg'
 				},
 				{
-					link: '',
+					link: 'tg://resolve?domain=kolosoff94',
 					img: 'https://www.flaticon.com/svg/static/icons/svg/2111/2111646.svg'
 				},
 				{
-					link: '',
+					link: 'https://wa.me/79052627002‬',
 					img: 'https://www.flaticon.com/svg/static/icons/svg/733/733585.svg'
 				},
 				{
-					link: '',
+					link: 'viber://add?number=79052627002‬',
 					img: 'https://www.flaticon.com/svg/static/icons/svg/185/185982.svg'
 				},
 				

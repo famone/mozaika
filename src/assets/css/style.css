@@ -337,6 +337,42 @@ h4{
 	background-position: center;
 	background-image: url(../img/main.jpg);
 }
+#inner{
+	position: relative;
+	padding: 120px 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/serv.png)
+}
+#inner:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+#inner2{
+	position: relative;
+	padding: 120px 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 70%;
+	background-image: url(../img/manip.png)
+}
+#inner2:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+}
 #outro{
 	padding: 90px 0;
 }
