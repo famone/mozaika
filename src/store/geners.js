@@ -16,17 +16,13 @@ const geners = {
 					img: 'https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg'
 				},
 				{
-					link: 'tg://resolve?domain=kolosoff94',
+					link: 'tg://resolve?domain=@mozaikaenergy',
 					img: 'https://www.flaticon.com/svg/static/icons/svg/2111/2111646.svg'
 				},
 				{
 					link: 'https://wa.me/79052627002‬',
 					img: 'https://www.flaticon.com/svg/static/icons/svg/733/733585.svg'
-				},
-				{
-					link: 'viber://add?number=79052627002‬',
-					img: 'https://www.flaticon.com/svg/static/icons/svg/185/185982.svg'
-				},
+				}
 				
 			],
 			generators: [],

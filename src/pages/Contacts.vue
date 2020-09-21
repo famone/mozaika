@@ -6,6 +6,22 @@
 				<div class="col-lg-4 ">
 					<div class="cont-box text-center">
 						<div class="icon-circle">
+							<img src="../assets/img/marker.svg" alt="">
+						</div>
+						<h3>ООО "МОЗАЙКА ДЭС”</h3>
+						<h3>ИНН: 7807164585</h3>
+						<h3>Санкт-Петербург,
+										ул. Летчика Пилютова,
+										д 11, корпус 1 литер а, офис 12-н
+									</h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 ">
+					<div class="cont-box text-center">
+						<div class="icon-circle">
 							<img src="../assets/img/tel.svg" alt="">
 						</div>
 						<a href="tel:+79052627002"><h3>+7 905 262-70-02</h3></a>
@@ -19,20 +35,7 @@
 						<div class="icon-circle">
 							<img src="../assets/img/mail.svg" alt="">
 						</div>
-						<a href="mailto:mosaika.des@mail.ru"><h3>mosaika.des@mail.ru</h3></a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 ">
-					<div class="cont-box text-center">
-						<div class="icon-circle">
-							<img src="../assets/img/marker.svg" alt="">
-						</div>
-						<h3>Санкт-Петербург,
-										ул. Летчика Пилютова,
-										д 11, корпус 1 литер а, офис 12-н
-									</h3>
+						<a href="mailto:mozaika.des@mail.ru"><h3>mozaika.des@mail.ru</h3></a>
 					</div>
 				</div>
 			</div>

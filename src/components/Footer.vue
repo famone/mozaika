@@ -7,14 +7,14 @@
 							<img src="../assets/img/logo2.svg" alt="">
 						</div>
 					</router-link>
-				<p class="small-grey">ООО "МОЗАЙКА ДЭС” <br>Аренда дизельных
+				<p class="small-grey">ООО "МОЗАЙКА ДЭС” <br>ИНН: 7807164585 <br>Аренда дизельных
 				<br>электростанций</p>
 			</div>
 			<div class="col-lg-4 text-center">
 				<h5>КОНТАКТЫ</h5>
 				<p class="small-grey"><a href="tel:+79052627002">+7 905 262-70-02</a></p>
 				<p class="small-grey"><a href="tel:+79650331799">+7 965 033-17-99</a></p>
-				<p class="small-grey"><a href="mailto:mosaika.des@mail.ru">mosaika.des@mail.ru</a></p>
+				<p class="small-grey"><a href="mailto:mozaika.des@mail.ru">mozaika.des@mail.ru</a></p>
 				<div class="socials">
 						<a :href="social.link" v-for="social in socials">
 							<img :src="social.img" alt="">

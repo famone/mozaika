@@ -8,7 +8,7 @@
 					</li>
 					<br>
 					<li><a href="tel:+79052627002" >+7 905 262-70-02</a></li>
-					<li><a href="mailto:mosaika.des@mail.ru">mosaika.des@mail.ru</a></li>
+					<li><a href="mailto:mozaika.des@mail.ru">mozaika.des@mail.ru</a></li>
 					<br>
 					<li><button class="order" @click="openPop()">Отправить заявку</button></li>
 			</ul>
@@ -23,7 +23,7 @@
 						</div>
 					</router-link>
 					<a href="tel:+79052627002" class="hidden-xs hidden-sm">+7 905 262-70-02</a>
-					<a href="mailto:mosaika.des@mail.ru" class="hidden-xs hidden-sm">mosaika.des@mail.ru</a>
+					<a href="mailto:mozaika.des@mail.ru" class="hidden-xs hidden-sm">mozaika.des@mail.ru</a>
 					<button class="order hidden-sm hidden-xs" @click="openPop()">Отправить заявку</button>
 					<div class="menu-btn order hidden-lg hidden-md" @click="menuActive = !menuActive">МЕНЮ</div>
 				</div>
@@ -53,16 +53,16 @@ export default{
 					link: '/generators'
 				},
 				{
-					title: 'О КОМПАНИИ',
-					link: '/about'
+					title: 'УСЛУГИ',
+					link: '/services'
 				},
 				{
 					title: 'АРЕНДА МАНИПУЛЯТОРОВ',
 					link: '/manipulator'
 				},
 				{
-					title: 'УСЛУГИ',
-					link: '/services'
+					title: 'О КОМПАНИИ',
+					link: '/about'
 				},
 				{
 					title: 'КОНТАКТЫ',

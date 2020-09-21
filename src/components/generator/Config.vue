@@ -1,6 +1,6 @@
 <template>
 				<div class="row config-box">
-					<div class="col-lg-4 mb-30">
+					<div class="col-lg-6 mb-30">
 						<h3>Конфигуратор:</h3> 
 						<br>
 						<div class="config">
@@ -8,17 +8,17 @@
 							<input type="range" max="60" min="1" step="1" v-model="rentDays" :style="{backgroundSize : getRangeWidth + '%' + ' 100%'}">
 						</div>
 					</div>
-					<div class="col-lg-4 mb-30">
+					<div class="col-lg-6 mb-30">
 						<h3>Предварительный расчет:</h3>
 						<br>
 						<h4>{{getCheckedItem}} ₽</h4>
 					</div>
-					<div class="col-lg-4 mb-30">
+					<!-- <div class="col-lg-4 mb-30">
 						<h3>Заказать аренду:</h3>
 						<br>
 						<button class="order" @click="openPop()" style="width: 100%;">Отправить заявку</button>
 					</div>
-				</div>
+ -->				</div>
 </template>
 
 

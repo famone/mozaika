@@ -2,7 +2,7 @@
 	<div>
 		<section id="inner2">
 		<div class="container">
-			<div class="col-lg-12">
+			<div class="col-lg-12 text-center">
 				<h1>Аренда манипуляторов</h1>
 			</div>
 		</div>
@@ -19,6 +19,10 @@
 								<td><p class="black-txt2">{{serv.price}}</p></td>
 							</tr>
 			</table>
+			<br>
+			<router-link tag="a" to="/services">
+				<button class="order">УСЛУГИ ДЭС</button>
+			</router-link>
 		</div>
 	</section>
 	</div>
@@ -38,7 +42,7 @@ export default{
 					price: '1300 ₽'
 				},
 				{
-					name: 'Один дополнительный час манипулятора (стандарт)',
+					name: 'Дополнительный час манипулятора (стандарт)',
 					price: '1600 ₽'
 				},
 				{

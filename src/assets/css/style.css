@@ -475,6 +475,12 @@ h4{
 	.pop-box{
 		width: 90%;
 	}
+	h1{
+		font-size: 30px;
+	}
+	#main{
+		padding: 40px 0;
+	}
 }
 @media (max-width: 390px) {
 	

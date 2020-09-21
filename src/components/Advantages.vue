@@ -41,7 +41,7 @@ export default{
 					img: require('../assets/img/ic4.svg')
 				},
 				{
-					title: 'Выезд специалиста на объект 24/7',
+					title: 'Выезд специалиста на объект',
 					img: require('../assets/img/ic5.svg')
 				},
 				{

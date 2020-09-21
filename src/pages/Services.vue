@@ -2,7 +2,7 @@
 <div>
 	<section id="inner">
 		<div class="container">
-			<div class="col-lg-12">
+			<div class="col-lg-12 text-center">
 				<h1>Услуги обслуживания ДЭС</h1>
 			</div>
 		</div>
@@ -11,6 +11,7 @@
 
 	<section id="serv">
 		<div class="container">
+			<p class="txt text-center"><strong>Техническое обслуживание:</strong></p>
 			<table>
 							<tr>
 								<td><p class="black-txt">НАИМЕНОВАНИЕ УСЛУГИ</p></td>
@@ -22,7 +23,8 @@
 							</tr>
 			</table>
 			<br>
-			<p class="txt"><strong>Техническое обслуживание на выезде:</strong></p>
+			<hr>
+			<p class="txt text-center"><strong>Техническое обслуживание на выезде:</strong></p>
 			<table>
 							<tr>
 								<td><p class="black-txt">НАИМЕНОВАНИЕ УСЛУГИ</p></td>
@@ -34,7 +36,7 @@
 							</tr>
 			</table>
 			<p>* В стоимость входят расходные материалы</p>
-			<br>
+			<br><br>
 			<router-link tag="a" to="/manipulator">
 				<button class="order">УСЛУГИ МАНИПУЛЯТОРА</button>
 			</router-link>
@@ -58,21 +60,25 @@ export default{
 				},
 				{
 					name: 'Выезд специалиста',
-					price: '5000 ₽'
+					price: '~5000 ₽'
+				},
+				{
+					name: 'Диагностика и ремонт ДЭС',
+					price: 'Договорная'
 				}
 			],
 			servicesOnDo: [
 				{
 					name: 'ТО ДЭС на выезде (от 16 кВт до 200 кВт)',
-					price: 'от 11400 ₽'
+					price: 'от 11400 ₽ *'
 				},
 				{
 					name: 'ТО ДЭС на выезде (от 220 кВт до 500 кВт)',
-					price: 'от 18000 ₽'
+					price: 'от 18000 ₽ *'
 				},
 				{
 					name: 'ТО ДЭС на выезде (более 500 кВт)',
-					price: 'от 29500 ₽'
+					price: 'от 29500 ₽ *'
 				},
 				{
 					name: 'Диагностика и ремонт ДЭС',
