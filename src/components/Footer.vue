@@ -32,6 +32,10 @@
 						<a href="https://webink.site/">Разработка сайта - webink.site</a>
 					</div>
 			</div>
+			<div class="col-lg-12 text-center">
+				<p class="small-txt">
+				Вся представленная на сайте информация, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ</p>
+			</div>
 		</div>
 	</footer>
 </template>
@@ -114,5 +118,11 @@ h5{
 	100% {
 	    transform: skewX(0deg);
 	}
+}
+
+.small-txt{
+	margin-top: 20px;
+	color: grey;
+	font-size: 13px;
 }
 </style>

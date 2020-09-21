@@ -3,7 +3,7 @@
 	<div class="pop" v-if="formPop">
 		<div class="pop-box">
 			<div class="cross" @click="openPop()">✕</div>
-			<h3 class="text-center">Отправить заявку на аренду генератора</h3>
+			<h3 class="text-center">Отправить заявку</h3>
 			<form action="">
 				<label for="">Ваше имя</label>
 				<input type="text" placeholder="Введите имя" v-model="name" :class="{errorInp : $v.name.$dirty && !$v.name.required}">
