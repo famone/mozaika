@@ -53,7 +53,7 @@ const geners = {
 		},
 		loadGeners({commit}){
 	  		axios
-	  			 .get('https://moz.webink.site/wp-json/mozaika/v1/get/products')
+	  			 .get('https://mozaikaenergy.com/wp-json/mozaika/v1/get/products')
 	  			 .then(response =>{
 	  			 	var tovars = response.data
 	  			 	commit('SET_GENERS', response.data)
@@ -63,7 +63,7 @@ const geners = {
 	  	},
 	  	loadUsefull({commit}){
 	  		axios
-	  			 .get('https://moz.webink.site/wp-json/mozaika/v1/get/information')
+	  			 .get('https://mozaikaenergy.com/wp-json/mozaika/v1/get/information')
 	  			 .then(response =>{
 	  			 	commit('SET_INFO', response.data)
 	  			 	
@@ -72,7 +72,7 @@ const geners = {
 	  	},
 	  	loadSocial({commit}){
 	  		axios
-	  			 .get('https://moz.webink.site/wp-json/mozaika/v1/get/social')
+	  			 .get('https://mozaikaenergy.com/wp-json/mozaika/v1/get/social')
 	  			 .then(response =>{
 	  			 	console.log(response.data)
 	  			 	// commit('SET_SOCIAL', response.data)
