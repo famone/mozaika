@@ -27,7 +27,7 @@ jobs:
         username: u1157388
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/
-        server-dir: /public_html/mozaikaenergy.com/dist
+        server-dir: /public_html/mozaikaenergy.com/dist/
 
     # - name: send message to tg
     #   uses: appleboy/telegram-action@master
